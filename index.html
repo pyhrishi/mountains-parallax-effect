@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css
+    ">
+    <title>MOUNTAINS</title>
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="img/man.png" alt="" id="man">
+        <img src="img/clouds_1.png" alt="" id="clouds_1">
+        <img src="img/clouds_2.png" alt="" id="clouds_2">
+        <img src="img/mountain_left.png" alt="" id="mountain_left">
+        <img src="img/mountain_right.png" alt="" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>Pahadon Me</h2>
+        <p><pre>            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            उससे मिले हुए मुझको तो अरसा हो गया
+            
+            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            उससे मिले हुए मुझको तो अरसा हो गया
+            
+            अरे कोई तो जाओ उसको बुलाओ
+            अरे कोई तो जाओ उसको बुलाओ
+            ना माने तो उसको डांट भी लगाओ
+            
+            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            मेरा दिल कहीं दूर पहाड़ों में खो गया
+            उससे मिले हुए मुझको तो अरसा हो गया
+            
+            सपनों में मेरे वो रोज़ आता और जाता है
+            संग वो अपने मुझको भी रोज़ बुलाता है
+            सपनों में मेरे वो रोज़ आता और जाता है
+            संग वो अपने मुझको भी रोज़ बुलाता है
+            
+            शहर का हो गया हूं में अब कैसे बताउ
+            क्या भीड-भाड़ में कहीं खो गया हूं
+            
+            मेरा दिल (मेरा दिल) कहीं दूर (कही दूर) पहाड़ों में खो गया (खो गया)
+            मेरा दिल (मेरा दिल) कहीं दूर (कही दूर) पहाड़ों में खो गया
+            उससे मिले हुए मुझको तो अरसा हो गया
+            मेरा दिल (मेरा दिल) कहीं दूर (कही दूर) पहाड़ों में खो गया</pre></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger:{
+                scrub:1
+            },
+            scale:1.5
+        });
+
+        gsap.to("#man",{
+            scrollTrigger:{
+                scrub:1
+            },
+            scale:0.5
+        });
+
+        gsap.to("#mountain_left",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:-500,
+        });
+
+        gsap.to("#mountain_right",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:500,
+        });
+
+        gsap.to("#clouds_1",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:200,
+        });
+
+        gsap.to("#clouds_2",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:-200,
+        });
+
+        gsap.to("#text",{
+            scrollTrigger:{
+                scrub:1
+            },
+            y:500,
+        });
+    </script>
+</body>
+</html>
